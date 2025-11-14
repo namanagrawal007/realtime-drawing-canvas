@@ -19,7 +19,7 @@ class WebSocketManager {
 
   connect(roomId, username, color) {
     return new Promise((resolve, reject) => {
-      this.socket = io('http://localhost:3000');
+      this.socket = io('https://realtime-drawing-canvas-backend-frmq.onrender.com');
 
       this.socket.on('connect', () => {
         this.connected = true;
